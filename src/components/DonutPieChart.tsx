@@ -9,6 +9,7 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
+import { TrendingUp } from "lucide-react"
 
 export const description = "A donut chart with text"
 
@@ -46,7 +47,7 @@ const chartConfig = {
     },
 } satisfies ChartConfig
 
-export function ChartPieDonutText() {
+const DonutPieChart = () => {
     const totalVisitors = React.useMemo(() => {
         return chartData.reduce((acc, curr) => acc + curr.visitors, 0)
     }, [])
@@ -102,6 +103,16 @@ export function ChartPieDonutText() {
                     </Pie>
                 </PieChart>
             </ChartContainer>
+            <div className="mt-4 flex flex-col gap-2 items-center">
+                <div className="flex items-center gap-2 leading-none font-medium">
+                    Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+                </div>
+                <div className="text-muted-foreground leading-none">
+                    Showing total visitors for the last 6 months
+                </div>
+            </div>
         </div>
     )
 }
+
+export default DonutPieChart

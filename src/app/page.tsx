@@ -1,5 +1,8 @@
 import AppBarChart from "@/components/BarChart";
 import ChartAreaGradient from "@/components/GradiantAreaChart";
+import DonutPieChart from "@/components/DonutPieChart";
+import CardList from "@/components/CardList";
+import TodoList from "@/components/TodoList";
 
 export default function Home() {
   return (
@@ -7,11 +10,21 @@ export default function Home() {
       <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
         <AppBarChart />
       </div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Card 2</div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Card 3</div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Card 4</div>
-      <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2"><ChartAreaGradient /></div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Card 6</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <CardList title="Popular Content" />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <DonutPieChart />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <TodoList />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
+        <ChartAreaGradient />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <CardList title="Latest Transactions" />
+      </div>
     </div>
   );
 }
