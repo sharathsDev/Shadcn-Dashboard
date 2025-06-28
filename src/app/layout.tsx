@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AppSideBar from "@/components/Sidebar";
-import NavBar from "@/components/Navbar";
+import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/providers/ThemeProvider"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { cookies } from "next/headers";
