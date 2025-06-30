@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetTrigger } from '@/components/ui/sheet'
 import EditUser from '@/components/EditUser'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
-import MultiLineChart from '@/components/MultiLineChart'
+import MultiLineChart from '@/components/charts/MultiLineChart'
 // http://localhost:3000/users/111
 // [ "", "users", "111" ]
 

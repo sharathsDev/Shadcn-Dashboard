@@ -1,6 +1,6 @@
-import AppBarChart from "@/components/BarChart";
-import ChartAreaGradient from "@/components/GradiantAreaChart";
-import DonutPieChart from "@/components/DonutPieChart";
+import AppBarChart from "@/components/charts/BarChart";
+import ChartAreaGradient from "@/components/charts/GradiantAreaChart";
+import DonutPieChart from "@/components/charts/DonutPieChart";
 import CardList from "@/components/CardList";
 import TodoList from "@/components/TodoList";
 
